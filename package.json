@@ -1,0 +1,11 @@
+{
+  "name": "dockerhub-slack-integration",
+  "version": "0.0.1",
+  "main": "server.js",
+  "license": "BSD",
+  "dependencies": {
+    "body-parser": "^1.9.3",
+    "express": "^4.10.4",
+    "request": "^2.73.0"
+  }
+}
