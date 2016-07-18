@@ -3,7 +3,6 @@
 var express  = require('express'),
     app      = express(),
     bodyParser = require('body-parser'),
-    slackUrl = 'https://hooks.slack.com',
     http = require('http'),
     server = http.createServer(app),
     request = require('request');
@@ -20,7 +19,7 @@ app.use(bodyParser.json({limit: '100mb'}));
 function hookAction(req) {
 
   var body = req.body;
-  slackUrl += req.url;
+  var slackUrl = 'https://hooks.slack.com' + req.url;
 
   var data = body.push_data,
     repo = body.repository,
