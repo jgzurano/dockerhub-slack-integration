@@ -1,0 +1,8 @@
+{
+  "name": "dockerhub-slack-integration"
+  "description": "Slack integration for Docker Hub",
+  "repository": "https://github.com/jgzurano/dockerhub-slack-integration.git",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}

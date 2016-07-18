@@ -3,7 +3,7 @@
 var express  = require('express'),
     app      = express(),
     bodyParser = require('body-parser'),
-    port     =  9292,
+    port     =  5000,
     slackUrl = 'https://hooks.slack.com',
     http = require('http'),
     server = http.createServer(app),
