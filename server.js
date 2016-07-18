@@ -67,7 +67,7 @@ function hookAction(req) {
 }
 
 app.post(new RegExp('/services\/.*'), function(req, res) { res.sendStatus(hookAction(req)); });
-app.get('/', function(req, res) { res.sendStatus(200)); });
+app.get('/', function(req, res) { res.sendStatus(200); });
 
 server.listen(port,function(){
   console.log("Server listening on port " + port);
