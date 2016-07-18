@@ -11,7 +11,7 @@ var express  = require('express'),
     exec = require('child_process').exec;
 
 
-app.set('port');
+app.set(process.env.PORT || 5000);
 app.use(bodyParser.urlencoded({
       limit: '100mb',
       extended: true
