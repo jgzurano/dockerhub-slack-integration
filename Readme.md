@@ -3,8 +3,14 @@ Docker Hub build notifications for Slack
 
 A small Express app that receives webhooks from Docker Hub and re-posts them as Slack messages.
 
-Here is a running version of this server on Heroku:
+Notification example:
+Docker Hub BOT [03:45 AM]  
+New image build complete
+Repository: https://hub.docker.com/r/example/example
+Tag: latest
+Pushed: Mon Jul 18 2016 03:44:53 GMT+0000 (UTC)
 
+Here is a running version of this server on Heroku:
 https://dockerhub-slack-integration.herokuapp.com
 
 ## Here's how to get setup...
