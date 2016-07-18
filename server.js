@@ -3,15 +3,13 @@
 var express  = require('express'),
     app      = express(),
     bodyParser = require('body-parser'),
-    port     =  5000,
     slackUrl = 'https://hooks.slack.com',
     http = require('http'),
     server = http.createServer(app),
     request = require('request');
     exec = require('child_process').exec;
 
-
-app.set(process.env.PORT || 5000);
+app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.urlencoded({
       limit: '100mb',
       extended: true
@@ -42,7 +40,6 @@ function hookAction(req) {
       "icon_url":"https://www.docker.com/sites/default/files/legal/small_v.png",
       "username":"Docker Hub"
     }
-
 
   var options = {
     uri: slackUrl,
